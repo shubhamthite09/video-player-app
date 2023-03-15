@@ -11,7 +11,7 @@ app.get("/video",(req,res)=>{
     if(!range){
         res.status(400).send("headre need")
     }
-    const videoPath = "./A1.mp4"
+    const videoPath = "./a1eval.mp4"
     const videoSize = fs.statSync(videoPath).size
     const Chunk = 10**6
     const start = Number(range.replace(/\D/g,""))
